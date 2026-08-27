@@ -26,15 +26,12 @@
             max-width: 440px;
             min-height: 100vh;
             margin: 0 auto;
-
             padding: 35px 22px 30px;
 
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
-        /* TOP DECORATION */
 
         .ornament {
             width: 90px;
@@ -45,11 +42,8 @@
                 #c99a4a,
                 transparent
             );
-
             margin-bottom: 25px;
         }
-
-        /* LOGO */
 
         .logo-wrapper {
             width: 145px;
@@ -60,7 +54,6 @@
             justify-content: center;
 
             margin-bottom: 15px;
-
             border-radius: 50%;
 
             background: radial-gradient(
@@ -79,59 +72,39 @@
         .logo {
             width: 115px;
             height: 115px;
-
             object-fit: contain;
         }
-
-        /* BUSINESS NAME */
 
         .business-name {
             font-size: 30px;
             font-weight: bold;
-
             letter-spacing: 5px;
-
             color: #d6aa5b;
-
             margin-bottom: 8px;
-
             text-align: center;
         }
 
         .subtitle {
             font-size: 12px;
             letter-spacing: 3px;
-
             color: #b8a58b;
-
             text-transform: uppercase;
-
             margin-bottom: 25px;
         }
-
-        /* MESSAGE */
 
         .message {
             font-size: 23px;
             line-height: 1.4;
-
             text-align: center;
-
             color: #fff6e8;
-
             margin-bottom: 28px;
-
             text-shadow: 0 2px 8px rgba(0,0,0,0.5);
         }
 
-        /* BUTTONS */
-
         .links {
             width: 100%;
-
             display: flex;
             flex-direction: column;
-
             gap: 12px;
         }
 
@@ -147,7 +120,6 @@
             border-radius: 14px;
 
             text-decoration: none;
-
             color: #f8efe2;
 
             background:
@@ -167,7 +139,6 @@
 
         .link:hover {
             transform: translateY(-2px);
-
             border-color: #c99a4a;
 
             background:
@@ -184,41 +155,30 @@
 
         .icon {
             width: 40px;
-
             font-size: 23px;
-
             text-align: center;
-
             margin-right: 13px;
         }
 
         .link-text {
             display: flex;
             flex-direction: column;
-
             text-align: left;
         }
 
         .link-title {
             font-family: Arial, Helvetica, sans-serif;
-
             font-size: 16px;
             font-weight: bold;
-
             color: #fff7e8;
         }
 
         .link-description {
             font-family: Arial, Helvetica, sans-serif;
-
             font-size: 11px;
-
             color: #b9aa95;
-
             margin-top: 3px;
         }
-
-        /* GOOGLE BUTTON */
 
         .google {
             background:
@@ -229,7 +189,6 @@
                 );
 
             color: #17100a;
-
             border-color: #e2bd7a;
         }
 
@@ -250,7 +209,32 @@
                 );
         }
 
-        /* ADDRESS */
+        /* COUPON BUTTON */
+
+        .coupon {
+            margin-top: 5px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #4d3215,
+                    #8d5d1d
+                );
+
+            border: 2px solid #d6aa5b;
+
+            box-shadow:
+                0 0 20px rgba(214,170,91,0.18),
+                0 5px 18px rgba(0,0,0,0.35);
+        }
+
+        .coupon .link-title {
+            color: #ffe8b1;
+        }
+
+        .coupon .link-description {
+            color: #e0c38d;
+        }
 
         .address {
             margin-top: 28px;
@@ -260,7 +244,6 @@
             font-family: Arial, Helvetica, sans-serif;
 
             font-size: 12px;
-
             line-height: 1.6;
 
             color: #a99a86;
@@ -269,8 +252,6 @@
         .address strong {
             color: #d1aa68;
         }
-
-        /* FOOTER */
 
         .footer-ornament {
             width: 90px;
@@ -289,16 +270,12 @@
 
         .footer {
             font-family: Arial, Helvetica, sans-serif;
-
             font-size: 10px;
-
             letter-spacing: 2px;
-
             color: #675846;
         }
 
         @media (max-width: 380px) {
-
             .page {
                 padding-left: 17px;
                 padding-right: 17px;
@@ -344,10 +321,9 @@
         Dziękujemy za wizytę! ❤️
     </div>
 
-    <!-- BUTTONS -->
     <div class="links">
 
-        <!-- GOOGLE REVIEWS -->
+        <!-- GOOGLE -->
         <a
             class="link google"
             href="https://search.google.com/local/writereview?placeid=ChIJ1Xx6RynDD0cReCkeP0sAmQ0"
@@ -365,7 +341,6 @@
                 </div>
             </div>
         </a>
-
 
         <!-- INSTAGRAM -->
         <a
@@ -386,7 +361,6 @@
             </div>
         </a>
 
-
         <!-- TIKTOK -->
         <a
             class="link"
@@ -405,7 +379,6 @@
                 </div>
             </div>
         </a>
-
 
         <!-- WEBSITE -->
         <a
@@ -426,7 +399,6 @@
             </div>
         </a>
 
-
         <!-- PHONE -->
         <a
             class="link"
@@ -445,8 +417,7 @@
             </div>
         </a>
 
-
-        <!-- GOOGLE MAPS -->
+        <!-- MAPS -->
         <a
             class="link"
             href="https://www.google.com/maps/dir/?api=1&destination=Zas%C5%82ucza%C5%84ska%204%2C%2055-010%20%C5%BBerniki%20Wroc%C5%82awskie"
@@ -465,16 +436,31 @@
             </div>
         </a>
 
+        <!-- COUPON -->
+        <a
+            class="link coupon"
+            href="promo.html"
+        >
+            <div class="icon">🎁</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Odbierz rabat -10%
+                </div>
+
+                <div class="link-description">
+                    Specjalna oferta dla Ciebie
+                </div>
+            </div>
+        </a>
+
     </div>
 
-
-    <!-- ADDRESS -->
     <div class="address">
         <strong>OLD KAIR</strong><br>
         ul. Zasłuczańska 4<br>
         55-010 Żerniki Wrocławskie
     </div>
-
 
     <div class="footer-ornament"></div>
 
