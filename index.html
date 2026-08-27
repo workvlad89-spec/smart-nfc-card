@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Old Kair</title>
+    <title>OLD KAIR</title>
 
     <style>
         * {
@@ -15,100 +15,302 @@
 
         body {
             min-height: 100vh;
-            background: #0b0b0b;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background:
+                radial-gradient(circle at top, #3a2817 0%, #17100a 38%, #090705 100%);
+            color: #f5ead8;
+            font-family: Georgia, "Times New Roman", serif;
         }
 
         .page {
             width: 100%;
-            max-width: 430px;
+            max-width: 440px;
             min-height: 100vh;
+            margin: 0 auto;
+
+            padding: 35px 22px 30px;
 
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
 
-            padding: 55px 24px 35px;
+        /* TOP DECORATION */
+
+        .ornament {
+            width: 90px;
+            height: 2px;
+            background: linear-gradient(
+                to right,
+                transparent,
+                #c99a4a,
+                transparent
+            );
+
+            margin-bottom: 25px;
+        }
+
+        /* LOGO */
+
+        .logo-wrapper {
+            width: 145px;
+            height: 145px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-bottom: 15px;
+
+            border-radius: 50%;
+
+            background: radial-gradient(
+                circle,
+                #3d2a17 0%,
+                #1a1008 70%
+            );
+
+            border: 1px solid #9d7435;
+
+            box-shadow:
+                0 0 30px rgba(201,154,74,0.18),
+                inset 0 0 25px rgba(0,0,0,0.5);
         }
 
         .logo {
-            width: 150px;
-            height: 150px;
+            width: 115px;
+            height: 115px;
 
             object-fit: contain;
-
-            margin-bottom: 28px;
         }
 
-        .message {
-            font-size: 22px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
+        /* BUSINESS NAME */
 
-            margin-bottom: 38px;
+        .business-name {
+            font-size: 30px;
+            font-weight: bold;
+
+            letter-spacing: 5px;
+
+            color: #d6aa5b;
+
+            margin-bottom: 8px;
 
             text-align: center;
         }
+
+        .subtitle {
+            font-size: 12px;
+            letter-spacing: 3px;
+
+            color: #b8a58b;
+
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+        }
+
+        /* MESSAGE */
+
+        .message {
+            font-size: 23px;
+            line-height: 1.4;
+
+            text-align: center;
+
+            color: #fff6e8;
+
+            margin-bottom: 28px;
+
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+
+        /* BUTTONS */
 
         .links {
             width: 100%;
 
             display: flex;
             flex-direction: column;
-            gap: 14px;
+
+            gap: 12px;
         }
 
         .link {
             width: 100%;
-            height: 62px;
+            min-height: 62px;
 
             display: flex;
             align-items: center;
-            justify-content: center;
 
-            border-radius: 16px;
+            padding: 0 20px;
 
-            background: #171717;
+            border-radius: 14px;
 
-            color: white;
             text-decoration: none;
 
-            font-size: 28px;
+            color: #f8efe2;
 
-            border: 1px solid #292929;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(61,42,23,0.95),
+                    rgba(29,19,11,0.98)
+                );
 
-            transition: 0.2s ease;
+            border: 1px solid rgba(190,145,72,0.45);
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.3);
+
+            transition: all 0.2s ease;
         }
 
         .link:hover {
             transform: translateY(-2px);
-            background: #222;
+
+            border-color: #c99a4a;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(79,54,27,0.98),
+                    rgba(35,23,13,0.98)
+                );
         }
 
         .link:active {
             transform: scale(0.98);
         }
 
+        .icon {
+            width: 40px;
+
+            font-size: 23px;
+
+            text-align: center;
+
+            margin-right: 13px;
+        }
+
+        .link-text {
+            display: flex;
+            flex-direction: column;
+
+            text-align: left;
+        }
+
+        .link-title {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            color: #fff7e8;
+        }
+
+        .link-description {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 11px;
+
+            color: #b9aa95;
+
+            margin-top: 3px;
+        }
+
+        /* GOOGLE BUTTON */
+
         .google {
-            background: #ffffff;
-            color: #111;
+            background:
+                linear-gradient(
+                    135deg,
+                    #d1a355,
+                    #9b6c27
+                );
+
+            color: #17100a;
+
+            border-color: #e2bd7a;
+        }
+
+        .google .link-title {
+            color: #17100a;
+        }
+
+        .google .link-description {
+            color: #382611;
         }
 
         .google:hover {
-            background: #eeeeee;
+            background:
+                linear-gradient(
+                    135deg,
+                    #dfb86d,
+                    #ae7c32
+                );
+        }
+
+        /* ADDRESS */
+
+        .address {
+            margin-top: 28px;
+
+            text-align: center;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 12px;
+
+            line-height: 1.6;
+
+            color: #a99a86;
+        }
+
+        .address strong {
+            color: #d1aa68;
+        }
+
+        /* FOOTER */
+
+        .footer-ornament {
+            width: 90px;
+            height: 1px;
+
+            margin-top: 25px;
+            margin-bottom: 15px;
+
+            background: linear-gradient(
+                to right,
+                transparent,
+                #80602f,
+                transparent
+            );
         }
 
         .footer {
-            margin-top: auto;
-            padding-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
 
-            font-size: 11px;
-            color: #555;
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            color: #675846;
+        }
+
+        @media (max-width: 380px) {
+
+            .page {
+                padding-left: 17px;
+                padding-right: 17px;
+            }
+
+            .business-name {
+                font-size: 26px;
+            }
+
+            .message {
+                font-size: 21px;
+            }
         }
     </style>
 </head>
@@ -117,16 +319,32 @@
 
 <div class="page">
 
-    <img
-        src="logo.png"
-        alt="Old Kair"
-        class="logo"
-    >
+    <div class="ornament"></div>
 
-    <div class="message">
-        Dziękujemy za wizytę
+    <!-- LOGO -->
+    <div class="logo-wrapper">
+        <img
+            src="logo.png"
+            alt="OLD KAIR"
+            class="logo"
+        >
     </div>
 
+    <!-- BUSINESS NAME -->
+    <div class="business-name">
+        OLD KAIR
+    </div>
+
+    <div class="subtitle">
+        Kebab & Pizza
+    </div>
+
+    <!-- MESSAGE -->
+    <div class="message">
+        Dziękujemy za wizytę! ❤️
+    </div>
+
+    <!-- BUTTONS -->
     <div class="links">
 
         <!-- GOOGLE REVIEWS -->
@@ -134,64 +352,134 @@
             class="link google"
             href="https://search.google.com/local/writereview?placeid=ChIJ1Xx6RynDD0cReCkeP0sAmQ0"
             target="_blank"
-            aria-label="Google Reviews"
         >
-            ⭐
+            <div class="icon">⭐</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Oceń nas w Google
+                </div>
+
+                <div class="link-description">
+                    Podziel się swoją opinią
+                </div>
+            </div>
         </a>
+
 
         <!-- INSTAGRAM -->
         <a
             class="link"
             href="https://www.instagram.com/oldkair/"
             target="_blank"
-            aria-label="Instagram"
         >
-            📸
+            <div class="icon">📸</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Nasz Instagram
+                </div>
+
+                <div class="link-description">
+                    Zobacz nasze zdjęcia
+                </div>
+            </div>
         </a>
+
 
         <!-- TIKTOK -->
         <a
             class="link"
             href="https://www.tiktok.com/@oldkair.pl"
             target="_blank"
-            aria-label="TikTok"
         >
-            ♪
+            <div class="icon">🎵</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Nasz TikTok
+                </div>
+
+                <div class="link-description">
+                    Zobacz nasze filmy
+                </div>
+            </div>
         </a>
+
 
         <!-- WEBSITE -->
         <a
             class="link"
             href="https://oldkair.pl/"
             target="_blank"
-            aria-label="Website"
         >
-            🌐
+            <div class="icon">🌐</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Nasza strona
+                </div>
+
+                <div class="link-description">
+                    Menu i więcej informacji
+                </div>
+            </div>
         </a>
+
 
         <!-- PHONE -->
         <a
             class="link"
             href="tel:+48788666670"
-            aria-label="Telefon"
         >
-            📞
+            <div class="icon">📞</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Zadzwoń do nas
+                </div>
+
+                <div class="link-description">
+                    +48 788 666 670
+                </div>
+            </div>
         </a>
+
 
         <!-- GOOGLE MAPS -->
         <a
             class="link"
-            href="https://www.google.com/maps/search/?api=1&query=Zas%C5%82ucza%C5%84ska+4%2C+55-010+%C5%BBerniki+Wroc%C5%82awskie"
+            href="https://www.google.com/maps/dir/?api=1&destination=Zas%C5%82ucza%C5%84ska%204%2C%2055-010%20%C5%BBerniki%20Wroc%C5%82awskie"
             target="_blank"
-            aria-label="Google Maps"
         >
-            📍
+            <div class="icon">📍</div>
+
+            <div class="link-text">
+                <div class="link-title">
+                    Znajdź nas
+                </div>
+
+                <div class="link-description">
+                    Zasłuczańska 4, Żerniki Wrocławskie
+                </div>
+            </div>
         </a>
 
     </div>
 
+
+    <!-- ADDRESS -->
+    <div class="address">
+        <strong>OLD KAIR</strong><br>
+        ul. Zasłuczańska 4<br>
+        55-010 Żerniki Wrocławskie
+    </div>
+
+
+    <div class="footer-ornament"></div>
+
     <div class="footer">
-        OLD KAIR
+        OLD KAIR KEBAB & PIZZA
     </div>
 
 </div>
