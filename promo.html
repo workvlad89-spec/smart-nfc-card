@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rabat - OLD KAIR</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+
+            background:
+                radial-gradient(
+                    circle at top,
+                    #4b3218 0%,
+                    #1a1008 45%,
+                    #080604 100%
+                );
+
+            color: #fff3dc;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 430px;
+
+            padding: 30px 22px;
+
+            text-align: center;
+        }
+
+        .ornament {
+            width: 100px;
+            height: 2px;
+
+            margin: 0 auto 25px;
+
+            background:
+                linear-gradient(
+                    to right,
+                    transparent,
+                    #d6aa5b,
+                    transparent
+                );
+        }
+
+        .title {
+            font-family: Georgia, serif;
+
+            font-size: 28px;
+            letter-spacing: 2px;
+
+            color: #d6aa5b;
+
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #c6b397;
+
+            margin-bottom: 30px;
+        }
+
+        .coupon {
+            background:
+                linear-gradient(
+                    145deg,
+                    #f0c875,
+                    #a87329
+                );
+
+            color: #201307;
+
+            border-radius: 22px;
+
+            padding: 35px 20px;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.45),
+                0 0 35px rgba(214,170,91,0.18);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+        .coupon::before,
+        .coupon::after {
+            content: "";
+
+            position: absolute;
+
+            width: 28px;
+            height: 28px;
+
+            background: #1a1008;
+
+            border-radius: 50%;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+        }
+
+        .coupon::before {
+            left: -14px;
+        }
+
+        .coupon::after {
+            right: -14px;
+        }
+
+        .gift {
+            font-size: 45px;
+
+            margin-bottom: 10px;
+        }
+
+        .discount {
+            font-size: 58px;
+
+            font-weight: 900;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+        }
+
+        .offer {
+            font-size: 18px;
+
+            font-weight: bold;
+
+            margin-bottom: 25px;
+        }
+
+        .code-label {
+            font-size: 12px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 8px;
+        }
+
+        .code {
+            background: rgba(255,255,255,0.35);
+
+            border: 2px dashed rgba(32,19,7,0.5);
+
+            border-radius: 12px;
+
+            padding: 15px;
+
+            font-size: 25px;
+
+            font-weight: 900;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 20px;
+        }
+
+        .instruction {
+            font-size: 13px;
+
+            line-height: 1.5;
+
+            margin-bottom: 5px;
+        }
+
+        .valid {
+            font-size: 12px;
+
+            opacity: 0.8;
+        }
+
+        .back {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            color: #cdbb9f;
+
+            text-decoration: none;
+
+            font-size: 14px;
+        }
+
+        .back:hover {
+            color: #fff;
+        }
+
+        .terms {
+            margin-top: 25px;
+
+            color: #756550;
+
+            font-size: 10px;
+
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="ornament"></div>
+
+    <div class="title">
+        OLD KAIR
+    </div>
+
+    <div class="subtitle">
+        Specjalna oferta dla naszych gości
+    </div>
+
+    <div class="coupon">
+
+        <div class="gift">
+            🎁
+        </div>
+
+        <div class="discount">
+            -10%
+        </div>
+
+        <div class="offer">
+            NA NASTĘPNE ZAMÓWIENIE
+        </div>
+
+        <div class="code-label">
+            Twój kod rabatowy
+        </div>
+
+        <div class="code">
+            OLD10
+        </div>
+
+        <div class="instruction">
+            Pokaż ten kod przy następnym zamówieniu.
+        </div>
+
+        <div class="valid">
+            Ważny przez 30 dni od otrzymania.
+        </div>
+
+    </div>
+
+    <a
+        class="back"
+        href="index.html"
+    >
+        ← Wróć
+    </a>
+
+    <div class="terms">
+        Rabat -10% na następne zamówienie.
+        <br>
+        Warunki promocji ustala OLD KAIR.
+    </div>
+
+</div>
+
+</body>
+</html>
